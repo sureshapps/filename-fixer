@@ -1,0 +1,50 @@
+{
+  "name": "@sureshkaleyannan/filename-fixer",
+  "version": "0.1.1",
+  "description": "Clean messy filenames with a tiny dependency-free API and preview-first CLI.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "bin": {
+    "filename-fixer": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "prepublishOnly": "npm test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "filename",
+    "sanitize",
+    "rename",
+    "cli",
+    "slug"
+  ],
+  "license": "MIT",
+  "author": "sureshkaleyannan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sureshapps/filename-fixer.git"
+  },
+  "homepage": "https://github.com/sureshapps/filename-fixer#readme",
+  "bugs": {
+    "url": "https://github.com/sureshapps/filename-fixer/issues"
+  }
+}
